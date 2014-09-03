@@ -1,0 +1,123 @@
+[class^="confirm"],
+[class*=" confirm"] {
+	
+	&[class*="-default"] > input ~ label,
+	> input ~ label.btn-default,
+	> input ~ label.label-default {
+		border-color: @bootstrap-default-border;
+		background-color: @bootstrap-default;
+		color: @bootstrap-default-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-default-hover-border;
+				background-color: @bootstrap-default-hover;
+			}
+		}
+	}
+	
+	
+	&[class*="-inverse"] > input ~ label,
+	> input ~ label.btn-inverse,
+	> input ~ label.label-inverse {
+		border-color: @bootstrap-inverse-border;
+		background-color: @bootstrap-inverse;
+		color: @bootstrap-inverse-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-inverse-hover-border;
+				background-color: @bootstrap-inverse-hover;
+			}
+		}
+	}
+	
+	&[class*="-primary"] > input ~ label,
+	> input ~ label.btn-primary,
+	> input ~ label.label-primary {
+		border-color: @bootstrap-primary-border;
+		background-color: @bootstrap-primary;
+		color: @bootstrap-primary-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-primary-hover-border;
+				background-color: @bootstrap-primary-hover;
+			}
+		}
+	}
+	
+	&[class*="-success"] > input ~ label,
+	> input ~ label.btn-success,
+	> input ~ label.label-success {
+		border-color: @bootstrap-success-border;
+		background-color: @bootstrap-success;
+		color: @bootstrap-success-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-success-hover-border;
+				background-color: @bootstrap-success-hover;
+			}
+		}
+	}
+	
+	&[class*="-info"] > input ~ label,
+	> input ~ label.btn-info,
+	> input ~ label.label-info {
+		border-color: @bootstrap-info-border;
+		background-color: @bootstrap-info;
+		color: @bootstrap-info-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-info-hover-border;
+				background-color: @bootstrap-info-hover;
+			}
+		}
+	}
+	
+	&[class*="-warning"] > input ~ label,
+	> input ~ label.btn-warning,
+	> input ~ label.label-warning {
+		border-color: @bootstrap-warning-border;
+		background-color: @bootstrap-warning;
+		color: @bootstrap-warning-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-warning-hover-border;
+				background-color: @bootstrap-warning-hover;
+			}
+		}
+	}
+	
+	&[class*="-danger"] > input ~ label,
+	> input ~ label.btn-danger,
+	> input ~ label.label-danger {
+		border-color: @bootstrap-danger-border;
+		background-color: @bootstrap-danger;
+		color: @bootstrap-danger-text;
+		
+		&:not(:nth-of-type(3)) {
+			
+			&:hover,
+			&:focus {
+				border-color: @bootstrap-danger-hover-border;
+				background-color: @bootstrap-danger-hover;
+			}
+		}
+	}
+}
