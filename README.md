@@ -1,11 +1,11 @@
-# confirm
+# confirm v1.0.0
 a button for double verification
 
 ## Contents
 
 - [Intro](#intro)
 - [Prerequisites](#prerequisites)
-- [Bugs](#bugs)
+- [Features](#features)
 - [Additional Information](#additional-information)
   - [Authors](#authors)
   - [Copyright](#copyright)
@@ -16,6 +16,14 @@ This snippet is about a button, which when clicked, asks you to confirm your dec
 
 ## Prerequisites
 + [Bootstrap](http://getbootstrap.com/)
+
+## Features
++ button asks you to confirm your decision
++ you can change the ratio of the labels displayed, when being questioned
++ you can the middle label in combination of changing the ratio, when being questioned
++ bootstrap theme
++ google calendar theme
++ source written in less
 
 ## Additional Information
 
