@@ -2,8 +2,9 @@
 [class*=" confirm"] {
 	
 	&[class*="-default"] > input ~ label,
+	&[class*="-default"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-default,
-	> input ~ label.label-default {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-default {
 		border-color: @bootstrap-default-border;
 		background-color: @bootstrap-default;
 		color: @bootstrap-default-text;
@@ -20,8 +21,9 @@
 	
 	
 	&[class*="-inverse"] > input ~ label,
+	&[class*="-inverse"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-inverse,
-	> input ~ label.label-inverse {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-inverse {
 		border-color: @bootstrap-inverse-border;
 		background-color: @bootstrap-inverse;
 		color: @bootstrap-inverse-text;
@@ -37,8 +39,9 @@
 	}
 	
 	&[class*="-primary"] > input ~ label,
+	&[class*="-primary"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-primary,
-	> input ~ label.label-primary {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-primary {
 		border-color: @bootstrap-primary-border;
 		background-color: @bootstrap-primary;
 		color: @bootstrap-primary-text;
@@ -54,8 +57,9 @@
 	}
 	
 	&[class*="-success"] > input ~ label,
+	&[class*="-success"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-success,
-	> input ~ label.label-success {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-success {
 		border-color: @bootstrap-success-border;
 		background-color: @bootstrap-success;
 		color: @bootstrap-success-text;
@@ -71,8 +75,9 @@
 	}
 	
 	&[class*="-info"] > input ~ label,
+	&[class*="-info"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-info,
-	> input ~ label.label-info {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-info {
 		border-color: @bootstrap-info-border;
 		background-color: @bootstrap-info;
 		color: @bootstrap-info-text;
@@ -88,8 +93,9 @@
 	}
 	
 	&[class*="-warning"] > input ~ label,
+	&[class*="-warning"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-warning,
-	> input ~ label.label-warning {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-warning {
 		border-color: @bootstrap-warning-border;
 		background-color: @bootstrap-warning;
 		color: @bootstrap-warning-text;
@@ -105,8 +111,9 @@
 	}
 	
 	&[class*="-danger"] > input ~ label,
+	&[class*="-danger"] > input ~ label:nth-of-type(3):not(:last-of-type),
 	> input ~ label.btn-danger,
-	> input ~ label.label-danger {
+	> input ~ label:nth-of-type(3):not(:last-of-type).label-danger {
 		border-color: @bootstrap-danger-border;
 		background-color: @bootstrap-danger;
 		color: @bootstrap-danger-text;

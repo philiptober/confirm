@@ -44,7 +44,7 @@
 				width: 20%;
 			}
 			
-			&:nth-of-type(3) {
+			&:nth-of-type(3):not(:last-of-type) {
 				left: 20%;
 				border-top: 0 solid @bootstrap-default-border;
 				border-bottom: 0 solid @bootstrap-default-border;
@@ -125,9 +125,9 @@
 [class^="confirm"] > input:checked,
 [class*=" confirm"] > input:checked {
 	
-	~ label {
+	~ label {	
 		
-		&:nth-of-type(3) {
+		&:nth-of-type(3):not(:last-of-type) {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 		}
