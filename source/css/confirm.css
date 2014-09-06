@@ -1,0 +1,1130 @@
+[class^="confirm"],
+[class*=" confirm"] {
+  position: relative;
+  padding: 0;
+  height: 34px;
+}
+[class^="confirm"] > input,
+[class*=" confirm"] > input {
+  margin: 0;
+  width: 100%;
+  height: inherit;
+  -webkit-appearance: none;
+}
+[class^="confirm"] > input ~ label,
+[class*=" confirm"] > input ~ label {
+  position: absolute;
+  top: 0;
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  overflow: hidden;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+[class^="confirm"] > input ~ label:first-of-type,
+[class*=" confirm"] > input ~ label:first-of-type {
+  left: 0;
+  margin: 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 7px 12px;
+  width: 100%;
+  height: inherit;
+}
+[class^="confirm"] > input ~ label:nth-of-type(2),
+[class*=" confirm"] > input ~ label:nth-of-type(2) {
+  left: 0;
+  border: 0 solid #cccccc;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 20%;
+}
+[class^="confirm"] > input ~ label:nth-of-type(3),
+[class*=" confirm"] > input ~ label:nth-of-type(3) {
+  left: 20%;
+  border-top: 0 solid #cccccc;
+  border-bottom: 0 solid #cccccc;
+  border-radius: 0;
+  width: 60%;
+}
+[class^="confirm"] > input ~ label:last-of-type,
+[class*=" confirm"] > input ~ label:last-of-type {
+  right: 0;
+  border: 0 solid #cccccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 20%;
+}
+[class^="confirm"] > input ~ label:first-of-type:hover,
+[class*=" confirm"] > input ~ label:first-of-type:hover,
+[class^="confirm"] > input ~ label:nth-of-type(2):hover,
+[class*=" confirm"] > input ~ label:nth-of-type(2):hover,
+[class^="confirm"] > input ~ label:last-of-type:hover,
+[class*=" confirm"] > input ~ label:last-of-type:hover,
+[class^="confirm"] > input ~ label:first-of-type:focus,
+[class*=" confirm"] > input ~ label:first-of-type:focus,
+[class^="confirm"] > input ~ label:nth-of-type(2):focus,
+[class*=" confirm"] > input ~ label:nth-of-type(2):focus,
+[class^="confirm"] > input ~ label:last-of-type:focus,
+[class*=" confirm"] > input ~ label:last-of-type:focus {
+  border-color: #adadad;
+  background-color: #e6e6e6;
+}
+[class^="confirm"] > input ~ label:first-of-type:active,
+[class*=" confirm"] > input ~ label:first-of-type:active,
+[class^="confirm"] > input ~ label:nth-of-type(2):active,
+[class*=" confirm"] > input ~ label:nth-of-type(2):active,
+[class^="confirm"] > input ~ label:last-of-type:active,
+[class*=" confirm"] > input ~ label:last-of-type:active,
+[class^="confirm"] > input ~ label:first-of-type.active,
+[class*=" confirm"] > input ~ label:first-of-type.active,
+[class^="confirm"] > input ~ label:nth-of-type(2).active,
+[class*=" confirm"] > input ~ label:nth-of-type(2).active,
+[class^="confirm"] > input ~ label:last-of-type.active,
+[class*=" confirm"] > input ~ label:last-of-type.active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+[class^="confirm"] > input ~ label[class^="btn-"],
+[class*=" confirm"] > input ~ label[class^="btn-"],
+[class^="confirm"] > input ~ label[class*=" btn-"],
+[class*=" confirm"] > input ~ label[class*=" btn-"],
+[class^="confirm"] > input ~ label[class^="label-"],
+[class*=" confirm"] > input ~ label[class^="label-"],
+[class^="confirm"] > input ~ label[class*=" label-"],
+[class*=" confirm"] > input ~ label[class*=" label-"] {
+  background-image: none;
+}
+[class^="confirm"] > input ~ label[class^="glyphicon-"]::before,
+[class*=" confirm"] > input ~ label[class^="glyphicon-"]::before,
+[class^="confirm"] > input ~ label[class*=" glyphicon-"]::before,
+[class*=" confirm"] > input ~ label[class*=" glyphicon-"]::before {
+  position: relative;
+  visibility: visible;
+  top: 2px;
+  left: 0px;
+  margin-right: 4px;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="confirm"] > input ~ label ~ label,
+[class*=" confirm"] > input ~ label ~ label {
+  border: 0;
+  padding: 0;
+  height: 0;
+  font-size: 0;
+  -webkit-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  -moz-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  -o-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+}
+[class^="confirm"] > input:checked ~ label:nth-of-type(3),
+[class*=" confirm"] > input:checked ~ label:nth-of-type(3) {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+[class^="confirm"] > input:checked ~ label:nth-of-type(2),
+[class*=" confirm"] > input:checked ~ label:nth-of-type(2),
+[class^="confirm"] > input:checked ~ label:last-of-type,
+[class*=" confirm"] > input:checked ~ label:last-of-type {
+  border-width: 1px;
+}
+[class^="confirm"] > input:checked ~ label:nth-of-type(n+1),
+[class*=" confirm"] > input:checked ~ label:nth-of-type(n+1) {
+  padding: 6px 12px;
+  height: inherit;
+  font-size: 14px;
+  -webkit-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  -moz-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  -o-transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+  transition: border-width 0.2s ease-in, padding 0.2s ease-in, height 0.2s ease-in, font-size 0.2s ease-in;
+}
+[class^="confirm"][class*="-default"] > input ~ label,
+[class*=" confirm"][class*="-default"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-default,
+[class*=" confirm"] > input ~ label.btn-default,
+[class^="confirm"] > input ~ label.label-default,
+[class*=" confirm"] > input ~ label.label-default {
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #333333;
+}
+[class^="confirm"][class*="-default"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-default"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-default:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-default:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-default:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-default:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-default"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-default"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-default:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-default:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-default:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-default:not( :nth-of-type(3)):focus {
+  border-color: #adadad;
+  background-color: #e6e6e6;
+}
+[class^="confirm"][class*="-inverse"] > input ~ label,
+[class*=" confirm"][class*="-inverse"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-inverse,
+[class*=" confirm"] > input ~ label.btn-inverse,
+[class^="confirm"] > input ~ label.label-inverse,
+[class*=" confirm"] > input ~ label.label-inverse {
+  border-color: #111111;
+  background-color: #222222;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-inverse"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-inverse"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-inverse:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-inverse:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-inverse:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-inverse:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-inverse"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-inverse"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-inverse:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-inverse:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-inverse:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-inverse:not( :nth-of-type(3)):focus {
+  border-color: #000000;
+  background-color: #111111;
+}
+[class^="confirm"][class*="-primary"] > input ~ label,
+[class*=" confirm"][class*="-primary"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-primary,
+[class*=" confirm"] > input ~ label.btn-primary,
+[class^="confirm"] > input ~ label.label-primary,
+[class*=" confirm"] > input ~ label.label-primary {
+  border-color: #2b669a;
+  background-color: #428bca;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-primary"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-primary"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-primary:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-primary:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-primary:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-primary:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-primary"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-primary"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-primary:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-primary:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-primary:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-primary:not( :nth-of-type(3)):focus {
+  border-color: #285e8e;
+  background-color: #3071a9;
+}
+[class^="confirm"][class*="-success"] > input ~ label,
+[class*=" confirm"][class*="-success"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-success,
+[class*=" confirm"] > input ~ label.btn-success,
+[class^="confirm"] > input ~ label.label-success,
+[class*=" confirm"] > input ~ label.label-success {
+  border-color: #4cae4c;
+  background-color: #5cb85c;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-success"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-success"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-success:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-success:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-success:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-success:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-success"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-success"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-success:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-success:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-success:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-success:not( :nth-of-type(3)):focus {
+  border-color: #398439;
+  background-color: #449d44;
+}
+[class^="confirm"][class*="-info"] > input ~ label,
+[class*=" confirm"][class*="-info"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-info,
+[class*=" confirm"] > input ~ label.btn-info,
+[class^="confirm"] > input ~ label.label-info,
+[class*=" confirm"] > input ~ label.label-info {
+  border-color: #46b8da;
+  background-color: #5bc0de;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-info"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-info"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-info:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-info:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-info:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-info:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-info"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-info"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-info:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-info:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-info:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-info:not( :nth-of-type(3)):focus {
+  border-color: #269abc;
+  background-color: #31b0d5;
+}
+[class^="confirm"][class*="-warning"] > input ~ label,
+[class*=" confirm"][class*="-warning"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-warning,
+[class*=" confirm"] > input ~ label.btn-warning,
+[class^="confirm"] > input ~ label.label-warning,
+[class*=" confirm"] > input ~ label.label-warning {
+  border-color: #eea236;
+  background-color: #f0ad4e;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-warning"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-warning"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-warning:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-warning:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-warning:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-warning:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-warning"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-warning"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-warning:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-warning:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-warning:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-warning:not( :nth-of-type(3)):focus {
+  border-color: #d58512;
+  background-color: #ec971f;
+}
+[class^="confirm"][class*="-danger"] > input ~ label,
+[class*=" confirm"][class*="-danger"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-danger,
+[class*=" confirm"] > input ~ label.btn-danger,
+[class^="confirm"] > input ~ label.label-danger,
+[class*=" confirm"] > input ~ label.label-danger {
+  border-color: #d43f3a;
+  background-color: #d9534f;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-danger"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-danger"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-danger:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-danger:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-danger:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-danger:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-danger"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-danger"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-danger:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-danger:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-danger:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-danger:not( :nth-of-type(3)):focus {
+  border-color: #ac2925;
+  background-color: #c9302c;
+}
+[class^="confirm"][class*="-google-brown"] > input ~ label,
+[class*=" confirm"][class*="-google-brown"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-brown,
+[class*=" confirm"] > input ~ label.btn-google-brown,
+[class^="confirm"] > input ~ label.label-google-brown,
+[class*=" confirm"] > input ~ label.label-google-brown {
+  border-color: #674438;
+  background-color: #ac725e;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-brown"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-brown"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-brown:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-brown:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-brown:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-brown:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-brown"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-brown"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-brown:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-brown:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-brown:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-brown:not( :nth-of-type(3)):focus {
+  border-color: #5d3d32;
+  background-color: #674438;
+}
+[class^="confirm"][class*="-google-lightbrown"] > input ~ label,
+[class*=" confirm"][class*="-google-lightbrown"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightbrown,
+[class*=" confirm"] > input ~ label.btn-google-lightbrown,
+[class^="confirm"] > input ~ label.label-google-lightbrown,
+[class*=" confirm"] > input ~ label.label-google-lightbrown {
+  border-color: #a65650;
+  background-color: #d06b64;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightbrown"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightbrown"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightbrown:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightbrown:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightbrown:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightbrown:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightbrown"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightbrown"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightbrown:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightbrown:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightbrown:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightbrown:not( :nth-of-type(3)):focus {
+  border-color: #954d48;
+  background-color: #a65650;
+}
+[class^="confirm"][class*="-google-red"] > input ~ label,
+[class*=" confirm"][class*="-google-red"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-red,
+[class*=" confirm"] > input ~ label.btn-google-red,
+[class^="confirm"] > input ~ label.label-google-red,
+[class*=" confirm"] > input ~ label.label-google-red {
+  border-color: #c62e1b;
+  background-color: #f83a22;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-red"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-red"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-red:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-red:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-red:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-red:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-red"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-red"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-red:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-red:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-red:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-red:not( :nth-of-type(3)):focus {
+  border-color: #b22918;
+  background-color: #c62e1b;
+}
+[class^="confirm"][class*="-google-lightred"] > input ~ label,
+[class*=" confirm"][class*="-google-lightred"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightred,
+[class*=" confirm"] > input ~ label.btn-google-lightred,
+[class^="confirm"] > input ~ label.label-google-lightred,
+[class*=" confirm"] > input ~ label.label-google-lightred {
+  border-color: #b43f2b;
+  background-color: #fa573c;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightred"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightred"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightred:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightred:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightred:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightred:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightred"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightred"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightred:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightred:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightred:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightred:not( :nth-of-type(3)):focus {
+  border-color: #a23927;
+  background-color: #b43f2b;
+}
+[class^="confirm"][class*="-google-orange"] > input ~ label,
+[class*=" confirm"][class*="-google-orange"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-orange,
+[class*=" confirm"] > input ~ label.btn-google-orange,
+[class^="confirm"] > input ~ label.label-google-orange,
+[class*=" confirm"] > input ~ label.label-google-orange {
+  border-color: #cf5e20;
+  background-color: #ff7537;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-orange"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-orange"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-orange:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-orange:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-orange:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-orange:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-orange"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-orange"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-orange:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-orange:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-orange:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-orange:not( :nth-of-type(3)):focus {
+  border-color: #ba551d;
+  background-color: #cf5e20;
+}
+[class^="confirm"][class*="-google-lightorange"] > input ~ label,
+[class*=" confirm"][class*="-google-lightorange"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightorange,
+[class*=" confirm"] > input ~ label.btn-google-lightorange,
+[class^="confirm"] > input ~ label.label-google-lightorange,
+[class*=" confirm"] > input ~ label.label-google-lightorange {
+  border-color: #e69c24;
+  background-color: #ffad46;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightorange"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightorange"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightorange:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightorange:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightorange:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightorange:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightorange"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightorange"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightorange:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightorange:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightorange:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightorange:not( :nth-of-type(3)):focus {
+  border-color: #cf8c20;
+  background-color: #e69c24;
+}
+[class^="confirm"][class*="-google-yellow"] > input ~ label,
+[class*=" confirm"][class*="-google-yellow"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-yellow,
+[class*=" confirm"] > input ~ label.btn-google-yellow,
+[class^="confirm"] > input ~ label.label-google-yellow,
+[class*=" confirm"] > input ~ label.label-google-yellow {
+  border-color: #e1bc37;
+  background-color: #fad165;
+  color: #333333;
+}
+[class^="confirm"][class*="-google-yellow"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-yellow"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-yellow:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-yellow:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-yellow:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-yellow:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-yellow"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-yellow"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-yellow:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-yellow:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-yellow:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-yellow:not( :nth-of-type(3)):focus {
+  border-color: #caa932;
+  background-color: #e1bc37;
+}
+[class^="confirm"][class*="-google-lightyellow"] > input ~ label,
+[class*=" confirm"][class*="-google-lightyellow"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightyellow,
+[class*=" confirm"] > input ~ label.btn-google-lightyellow,
+[class^="confirm"] > input ~ label.label-google-lightyellow,
+[class*=" confirm"] > input ~ label.label-google-lightyellow {
+  border-color: #e2d248;
+  background-color: #fbe983;
+  color: #333333;
+}
+[class^="confirm"][class*="-google-lightyellow"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightyellow"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightyellow:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightyellow:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightyellow:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightyellow:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightyellow"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightyellow"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightyellow:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightyellow:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightyellow:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightyellow:not( :nth-of-type(3)):focus {
+  border-color: #cbbd41;
+  background-color: #e2d248;
+}
+[class^="confirm"][class*="-google-lightgreen"] > input ~ label,
+[class*=" confirm"][class*="-google-lightgreen"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightgreen,
+[class*=" confirm"] > input ~ label.btn-google-lightgreen,
+[class^="confirm"] > input ~ label.label-google-lightgreen,
+[class*=" confirm"] > input ~ label.label-google-lightgreen {
+  border-color: #a1c63c;
+  background-color: #b3dc6c;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightgreen"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightgreen"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightgreen:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightgreen:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightgreen:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightgreen:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightgreen"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightgreen"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightgreen:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightgreen:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightgreen:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightgreen:not( :nth-of-type(3)):focus {
+  border-color: #91b236;
+  background-color: #a1c63c;
+}
+[class^="confirm"][class*="-google-green"] > input ~ label,
+[class*=" confirm"][class*="-google-green"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-green,
+[class*=" confirm"] > input ~ label.btn-google-green,
+[class^="confirm"] > input ~ label.label-google-green,
+[class*=" confirm"] > input ~ label.label-google-green {
+  border-color: #64a92d;
+  background-color: #7bd148;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-green"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-green"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-green:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-green:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-green:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-green:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-green"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-green"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-green:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-green:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-green:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-green:not( :nth-of-type(3)):focus {
+  border-color: #5a9828;
+  background-color: #64a92d;
+}
+[class^="confirm"][class*="-google-darkgreen"] > input ~ label,
+[class*=" confirm"][class*="-google-darkgreen"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-darkgreen,
+[class*=" confirm"] > input ~ label.btn-google-darkgreen,
+[class^="confirm"] > input ~ label.label-google-darkgreen,
+[class*=" confirm"] > input ~ label.label-google-darkgreen {
+  border-color: #107949;
+  background-color: #16a765;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-darkgreen"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-darkgreen"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-darkgreen:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-darkgreen:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-darkgreen:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-darkgreen:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-darkgreen"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-darkgreen"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-darkgreen:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-darkgreen:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-darkgreen:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-darkgreen:not( :nth-of-type(3)):focus {
+  border-color: #0e6d42;
+  background-color: #107949;
+}
+[class^="confirm"][class*="-google-turquoise"] > input ~ label,
+[class*=" confirm"][class*="-google-turquoise"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-turquoise,
+[class*=" confirm"] > input ~ label.btn-google-turquoise,
+[class^="confirm"] > input ~ label.label-google-turquoise,
+[class*=" confirm"] > input ~ label.label-google-turquoise {
+  border-color: #35ae76;
+  background-color: #42d692;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-turquoise"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-turquoise"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-turquoise:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-turquoise:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-turquoise:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-turquoise:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-turquoise"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-turquoise"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-turquoise:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-turquoise:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-turquoise:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-turquoise:not( :nth-of-type(3)):focus {
+  border-color: #309d6a;
+  background-color: #35ae76;
+}
+[class^="confirm"][class*="-google-lightturquoise"] > input ~ label,
+[class*=" confirm"][class*="-google-lightturquoise"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightturquoise,
+[class*=" confirm"] > input ~ label.btn-google-lightturquoise,
+[class^="confirm"] > input ~ label.label-google-lightturquoise,
+[class*=" confirm"] > input ~ label.label-google-lightturquoise {
+  border-color: #63caad;
+  background-color: #92e1c0;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightturquoise"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightturquoise"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightturquoise:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightturquoise:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightturquoise:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightturquoise:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightturquoise"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightturquoise"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightturquoise:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightturquoise:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightturquoise:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightturquoise:not( :nth-of-type(3)):focus {
+  border-color: #59b69c;
+  background-color: #63caad;
+}
+[class^="confirm"][class*="-google-lightblue"] > input ~ label,
+[class*=" confirm"][class*="-google-lightblue"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightblue,
+[class*=" confirm"] > input ~ label.btn-google-lightblue,
+[class^="confirm"] > input ~ label.label-google-lightblue,
+[class*=" confirm"] > input ~ label.label-google-lightblue {
+  border-color: #72cad0;
+  background-color: #9fe1e7;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightblue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightblue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightblue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightblue:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightblue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightblue:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightblue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightblue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightblue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightblue:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightblue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightblue:not( :nth-of-type(3)):focus {
+  border-color: #67b6bb;
+  background-color: #72cad0;
+}
+[class^="confirm"][class*="-google-blue"] > input ~ label,
+[class*=" confirm"][class*="-google-blue"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-blue,
+[class*=" confirm"] > input ~ label.btn-google-blue,
+[class^="confirm"] > input ~ label.label-google-blue,
+[class*=" confirm"] > input ~ label.label-google-blue {
+  border-color: #81a0bb;
+  background-color: #9fc6e7;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-blue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-blue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-blue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-blue:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-blue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-blue:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-blue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-blue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-blue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-blue:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-blue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-blue:not( :nth-of-type(3)):focus {
+  border-color: #7490a8;
+  background-color: #81a0bb;
+}
+[class^="confirm"][class*="-google-darkblue"] > input ~ label,
+[class*=" confirm"][class*="-google-darkblue"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-darkblue,
+[class*=" confirm"] > input ~ label.btn-google-darkblue,
+[class^="confirm"] > input ~ label.label-google-darkblue,
+[class*=" confirm"] > input ~ label.label-google-darkblue {
+  border-color: #3460a6;
+  background-color: #4986e7;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-darkblue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-darkblue"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-darkblue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-darkblue:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-darkblue:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-darkblue:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-darkblue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-darkblue"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-darkblue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-darkblue:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-darkblue:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-darkblue:not( :nth-of-type(3)):focus {
+  border-color: #2f5695;
+  background-color: #3460a6;
+}
+[class^="confirm"][class*="-google-indigo"] > input ~ label,
+[class*=" confirm"][class*="-google-indigo"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-indigo,
+[class*=" confirm"] > input ~ label.btn-google-indigo,
+[class^="confirm"] > input ~ label.label-google-indigo,
+[class*=" confirm"] > input ~ label.label-google-indigo {
+  border-color: #6c6db2;
+  background-color: #9a9cff;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-indigo"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-indigo"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-indigo:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-indigo:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-indigo:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-indigo:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-indigo"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-indigo"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-indigo:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-indigo:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-indigo:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-indigo:not( :nth-of-type(3)):focus {
+  border-color: #6162a0;
+  background-color: #6c6db2;
+}
+[class^="confirm"][class*="-google-lightpurple"] > input ~ label,
+[class*=" confirm"][class*="-google-lightpurple"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightpurple,
+[class*=" confirm"] > input ~ label.btn-google-lightpurple,
+[class^="confirm"] > input ~ label.label-google-lightpurple,
+[class*=" confirm"] > input ~ label.label-google-lightpurple {
+  border-color: #826cb2;
+  background-color: #b99aff;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightpurple"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightpurple"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightpurple:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightpurple:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightpurple:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightpurple:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightpurple"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightpurple"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightpurple:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightpurple:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightpurple:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightpurple:not( :nth-of-type(3)):focus {
+  border-color: #7561a0;
+  background-color: #826cb2;
+}
+[class^="confirm"][class*="-google-purple"] > input ~ label,
+[class*=" confirm"][class*="-google-purple"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-purple,
+[class*=" confirm"] > input ~ label.btn-google-purple,
+[class^="confirm"] > input ~ label.label-google-purple,
+[class*=" confirm"] > input ~ label.label-google-purple {
+  border-color: #73559e;
+  background-color: #a47ae2;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-purple"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-purple"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-purple:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-purple:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-purple:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-purple:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-purple"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-purple"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-purple:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-purple:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-purple:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-purple:not( :nth-of-type(3)):focus {
+  border-color: #684c8e;
+  background-color: #73559e;
+}
+[class^="confirm"][class*="-google-redviolet"] > input ~ label,
+[class*=" confirm"][class*="-google-redviolet"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-redviolet,
+[class*=" confirm"] > input ~ label.btn-google-redviolet,
+[class^="confirm"] > input ~ label.label-google-redviolet,
+[class*=" confirm"] > input ~ label.label-google-redviolet {
+  border-color: #9051a1;
+  background-color: #cd74e6;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-redviolet"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-redviolet"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-redviolet:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-redviolet:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-redviolet:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-redviolet:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-redviolet"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-redviolet"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-redviolet:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-redviolet:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-redviolet:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-redviolet:not( :nth-of-type(3)):focus {
+  border-color: #824991;
+  background-color: #9051a1;
+}
+[class^="confirm"][class*="-google-pink"] > input ~ label,
+[class*=" confirm"][class*="-google-pink"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-pink,
+[class*=" confirm"] > input ~ label.btn-google-pink,
+[class^="confirm"] > input ~ label.label-google-pink,
+[class*=" confirm"] > input ~ label.label-google-pink {
+  border-color: #c5748e;
+  background-color: #f691b2;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-pink"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-pink"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-pink:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-pink:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-pink:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-pink:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-pink"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-pink"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-pink:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-pink:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-pink:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-pink:not( :nth-of-type(3)):focus {
+  border-color: #b16880;
+  background-color: #c5748e;
+}
+[class^="confirm"][class*="-google-browngrey"] > input ~ label,
+[class*=" confirm"][class*="-google-browngrey"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-browngrey,
+[class*=" confirm"] > input ~ label.btn-google-browngrey,
+[class^="confirm"] > input ~ label.label-google-browngrey,
+[class*=" confirm"] > input ~ label.label-google-browngrey {
+  border-color: #a3858a;
+  background-color: #cca6ac;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-browngrey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-browngrey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-browngrey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-browngrey:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-browngrey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-browngrey:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-browngrey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-browngrey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-browngrey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-browngrey:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-browngrey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-browngrey:not( :nth-of-type(3)):focus {
+  border-color: #93787c;
+  background-color: #a3858a;
+}
+[class^="confirm"][class*="-google-lightgrey"] > input ~ label,
+[class*=" confirm"][class*="-google-lightgrey"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-lightgrey,
+[class*=" confirm"] > input ~ label.btn-google-lightgrey,
+[class^="confirm"] > input ~ label.label-google-lightgrey,
+[class*=" confirm"] > input ~ label.label-google-lightgrey {
+  border-color: #a29799;
+  background-color: #cabdbf;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-lightgrey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-lightgrey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-lightgrey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-lightgrey:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-lightgrey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-lightgrey:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-lightgrey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-lightgrey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-lightgrey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-lightgrey:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-lightgrey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-lightgrey:not( :nth-of-type(3)):focus {
+  border-color: #92888a;
+  background-color: #a29799;
+}
+[class^="confirm"][class*="-google-grey"] > input ~ label,
+[class*=" confirm"][class*="-google-grey"] > input ~ label,
+[class^="confirm"] > input ~ label.btn-google-grey,
+[class*=" confirm"] > input ~ label.btn-google-grey,
+[class^="confirm"] > input ~ label.label-google-grey,
+[class*=" confirm"] > input ~ label.label-google-grey {
+  border-color: #888888;
+  background-color: #c2c2c2;
+  color: #ffffff;
+}
+[class^="confirm"][class*="-google-grey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class*=" confirm"][class*="-google-grey"] > input ~ label:not(:nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.btn-google-grey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.btn-google-grey:not( :nth-of-type(3)):hover,
+[class^="confirm"] > input ~ label.label-google-grey:not( :nth-of-type(3)):hover,
+[class*=" confirm"] > input ~ label.label-google-grey:not( :nth-of-type(3)):hover,
+[class^="confirm"][class*="-google-grey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class*=" confirm"][class*="-google-grey"] > input ~ label:not(:nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.btn-google-grey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.btn-google-grey:not( :nth-of-type(3)):focus,
+[class^="confirm"] > input ~ label.label-google-grey:not( :nth-of-type(3)):focus,
+[class*=" confirm"] > input ~ label.label-google-grey:not( :nth-of-type(3)):focus {
+  border-color: #7a7a7a;
+  background-color: #888888;
+}
+.confirm-1-1-8 > input:checked ~ label:nth-of-type(2),
+.confirm-1-2-7 > input:checked ~ label:nth-of-type(2),
+.confirm-1-3-6 > input:checked ~ label:nth-of-type(2),
+.confirm-1-4-5 > input:checked ~ label:nth-of-type(2),
+.confirm-1-5-4 > input:checked ~ label:nth-of-type(2),
+.confirm-1-6-3 > input:checked ~ label:nth-of-type(2),
+.confirm-1-7-2 > input:checked ~ label:nth-of-type(2),
+.confirm-1-8-1 > input:checked ~ label:nth-of-type(2),
+.confirm-1-1-8 > input:checked ~ label:nth-of-type(3),
+.confirm-2-1-7 > input:checked ~ label:nth-of-type(3),
+.confirm-3-1-6 > input:checked ~ label:nth-of-type(3),
+.confirm-4-1-5 > input:checked ~ label:nth-of-type(3),
+.confirm-5-1-4 > input:checked ~ label:nth-of-type(3),
+.confirm-6-1-3 > input:checked ~ label:nth-of-type(3),
+.confirm-7-1-2 > input:checked ~ label:nth-of-type(3),
+.confirm-8-1-1 > input:checked ~ label:nth-of-type(3),
+.confirm-1-8-1 > input:checked ~ label:last-of-type,
+.confirm-2-7-1 > input:checked ~ label:last-of-type,
+.confirm-3-6-1 > input:checked ~ label:last-of-type,
+.confirm-4-5-1 > input:checked ~ label:last-of-type,
+.confirm-5-4-1 > input:checked ~ label:last-of-type,
+.confirm-6-3-1 > input:checked ~ label:last-of-type,
+.confirm-7-2-1 > input:checked ~ label:last-of-type,
+.confirm-8-1-1 > input:checked ~ label:last-of-type {
+  padding-right: 0;
+  padding-left: 0;
+}
+.confirm-1-1-8 > input ~ label:nth-of-type(2),
+.confirm-1-2-7 > input ~ label:nth-of-type(2),
+.confirm-1-3-6 > input ~ label:nth-of-type(2),
+.confirm-1-4-5 > input ~ label:nth-of-type(2),
+.confirm-1-5-4 > input ~ label:nth-of-type(2),
+.confirm-1-6-3 > input ~ label:nth-of-type(2),
+.confirm-1-7-2 > input ~ label:nth-of-type(2),
+.confirm-1-8-1 > input ~ label:nth-of-type(2),
+.confirm-1-1-8 > input ~ label:nth-of-type(3),
+.confirm-2-1-7 > input ~ label:nth-of-type(3),
+.confirm-3-1-6 > input ~ label:nth-of-type(3),
+.confirm-4-1-5 > input ~ label:nth-of-type(3),
+.confirm-5-1-4 > input ~ label:nth-of-type(3),
+.confirm-6-1-3 > input ~ label:nth-of-type(3),
+.confirm-7-1-2 > input ~ label:nth-of-type(3),
+.confirm-8-1-1 > input ~ label:nth-of-type(3),
+.confirm-1-8-1 > input ~ label:last-of-type,
+.confirm-2-7-1 > input ~ label:last-of-type,
+.confirm-3-6-1 > input ~ label:last-of-type,
+.confirm-4-5-1 > input ~ label:last-of-type,
+.confirm-5-4-1 > input ~ label:last-of-type,
+.confirm-6-3-1 > input ~ label:last-of-type,
+.confirm-7-2-1 > input ~ label:last-of-type,
+.confirm-8-1-1 > input ~ label:last-of-type {
+  width: 10%;
+}
+.confirm-2-1-7 > input ~ label:nth-of-type(2),
+.confirm-2-2-6 > input ~ label:nth-of-type(2),
+.confirm-2-3-5 > input ~ label:nth-of-type(2),
+.confirm-2-4-4 > input ~ label:nth-of-type(2),
+.confirm-2-5-3 > input ~ label:nth-of-type(2),
+.confirm-2-6-2 > input ~ label:nth-of-type(2),
+.confirm-2-7-1 > input ~ label:nth-of-type(2),
+.confirm-1-2-7 > input ~ label:nth-of-type(3),
+.confirm-2-2-6 > input ~ label:nth-of-type(3),
+.confirm-3-2-5 > input ~ label:nth-of-type(3),
+.confirm-4-2-4 > input ~ label:nth-of-type(3),
+.confirm-5-2-3 > input ~ label:nth-of-type(3),
+.confirm-6-2-2 > input ~ label:nth-of-type(3),
+.confirm-7-2-1 > input ~ label:nth-of-type(3),
+.confirm-1-7-2 > input ~ label:last-of-type,
+.confirm-2-6-2 > input ~ label:last-of-type,
+.confirm-3-5-2 > input ~ label:last-of-type,
+.confirm-4-4-2 > input ~ label:last-of-type,
+.confirm-5-3-2 > input ~ label:last-of-type,
+.confirm-6-2-2 > input ~ label:last-of-type,
+.confirm-7-1-2 > input ~ label:last-of-type {
+  width: 20%;
+}
+.confirm-3-1-6 > input ~ label:nth-of-type(2),
+.confirm-3-2-5 > input ~ label:nth-of-type(2),
+.confirm-3-3-4 > input ~ label:nth-of-type(2),
+.confirm-3-4-3 > input ~ label:nth-of-type(2),
+.confirm-3-5-2 > input ~ label:nth-of-type(2),
+.confirm-3-6-1 > input ~ label:nth-of-type(2),
+.confirm-1-3-6 > input ~ label:nth-of-type(3),
+.confirm-2-3-5 > input ~ label:nth-of-type(3),
+.confirm-3-3-4 > input ~ label:nth-of-type(3),
+.confirm-4-3-3 > input ~ label:nth-of-type(3),
+.confirm-5-3-2 > input ~ label:nth-of-type(3),
+.confirm-6-3-1 > input ~ label:nth-of-type(3),
+.confirm-1-6-3 > input ~ label:last-of-type,
+.confirm-2-5-3 > input ~ label:last-of-type,
+.confirm-3-4-3 > input ~ label:last-of-type,
+.confirm-4-3-3 > input ~ label:last-of-type,
+.confirm-5-2-3 > input ~ label:last-of-type,
+.confirm-6-1-3 > input ~ label:last-of-type {
+  width: 30%;
+}
+.confirm-4-1-5 > input ~ label:nth-of-type(2),
+.confirm-4-2-4 > input ~ label:nth-of-type(2),
+.confirm-4-3-3 > input ~ label:nth-of-type(2),
+.confirm-4-4-2 > input ~ label:nth-of-type(2),
+.confirm-4-5-1 > input ~ label:nth-of-type(2),
+.confirm-1-4-5 > input ~ label:nth-of-type(3),
+.confirm-2-4-4 > input ~ label:nth-of-type(3),
+.confirm-3-4-3 > input ~ label:nth-of-type(3),
+.confirm-4-4-2 > input ~ label:nth-of-type(3),
+.confirm-5-4-1 > input ~ label:nth-of-type(3),
+.confirm-1-5-4 > input ~ label:last-of-type,
+.confirm-2-4-4 > input ~ label:last-of-type,
+.confirm-3-3-4 > input ~ label:last-of-type,
+.confirm-4-2-4 > input ~ label:last-of-type,
+.confirm-5-1-4 > input ~ label:last-of-type {
+  width: 40%;
+}
+.confirm-5-1-4 > input ~ label:nth-of-type(2),
+.confirm-5-2-3 > input ~ label:nth-of-type(2),
+.confirm-5-3-2 > input ~ label:nth-of-type(2),
+.confirm-5-4-1 > input ~ label:nth-of-type(2),
+.confirm-1-5-4 > input ~ label:nth-of-type(3),
+.confirm-2-5-3 > input ~ label:nth-of-type(3),
+.confirm-3-5-2 > input ~ label:nth-of-type(3),
+.confirm-4-5-1 > input ~ label:nth-of-type(3),
+.confirm-1-4-5 > input ~ label:last-of-type,
+.confirm-2-3-5 > input ~ label:last-of-type,
+.confirm-3-2-5 > input ~ label:last-of-type,
+.confirm-4-1-5 > input ~ label:last-of-type {
+  width: 50%;
+}
+.confirm-6-1-3 > input ~ label:nth-of-type(2),
+.confirm-6-2-2 > input ~ label:nth-of-type(2),
+.confirm-6-3-1 > input ~ label:nth-of-type(2),
+.confirm-1-6-3 > input ~ label:nth-of-type(3),
+.confirm-2-6-2 > input ~ label:nth-of-type(3),
+.confirm-3-6-1 > input ~ label:nth-of-type(3),
+.confirm-1-3-6 > input ~ label:last-of-type,
+.confirm-2-2-6 > input ~ label:last-of-type,
+.confirm-3-1-6 > input ~ label:last-of-type {
+  width: 60%;
+}
+.confirm-7-1-2 > input ~ label:nth-of-type(2),
+.confirm-7-2-1 > input ~ label:nth-of-type(2),
+.confirm-1-7-2 > input ~ label:nth-of-type(3),
+.confirm-2-7-1 > input ~ label:nth-of-type(3),
+.confirm-1-2-7 > input ~ label:last-of-type,
+.confirm-2-1-7 > input ~ label:last-of-type {
+  width: 70%;
+}
+.confirm-8-1-1 > input ~ label:nth-of-type(2),
+.confirm-1-8-1 > input ~ label:nth-of-type(3),
+.confirm-1-1-8 > input ~ label:last-of-type {
+  width: 80%;
+}
+.confirm-1-1-8 > input ~ label:nth-of-type(3),
+.confirm-1-2-7 > input ~ label:nth-of-type(3),
+.confirm-1-3-6 > input ~ label:nth-of-type(3),
+.confirm-1-4-5 > input ~ label:nth-of-type(3),
+.confirm-1-5-4 > input ~ label:nth-of-type(3),
+.confirm-1-6-3 > input ~ label:nth-of-type(3),
+.confirm-1-7-2 > input ~ label:nth-of-type(3),
+.confirm-1-8-1 > input ~ label:nth-of-type(3) {
+  left: 10%;
+}
+.confirm-2-1-7 > input ~ label:nth-of-type(3),
+.confirm-2-2-6 > input ~ label:nth-of-type(3),
+.confirm-2-3-5 > input ~ label:nth-of-type(3),
+.confirm-2-4-4 > input ~ label:nth-of-type(3),
+.confirm-2-5-3 > input ~ label:nth-of-type(3),
+.confirm-2-6-2 > input ~ label:nth-of-type(3),
+.confirm-2-7-1 > input ~ label:nth-of-type(3) {
+  left: 20%;
+}
+.confirm-3-1-6 > input ~ label:nth-of-type(3),
+.confirm-3-2-5 > input ~ label:nth-of-type(3),
+.confirm-3-3-4 > input ~ label:nth-of-type(3),
+.confirm-3-4-3 > input ~ label:nth-of-type(3),
+.confirm-3-5-2 > input ~ label:nth-of-type(3),
+.confirm-3-6-1 > input ~ label:nth-of-type(3) {
+  left: 30%;
+}
+.confirm-4-1-5 > input ~ label:nth-of-type(3),
+.confirm-4-2-4 > input ~ label:nth-of-type(3),
+.confirm-4-3-3 > input ~ label:nth-of-type(3),
+.confirm-4-4-2 > input ~ label:nth-of-type(3),
+.confirm-4-5-1 > input ~ label:nth-of-type(3) {
+  left: 40%;
+}
+.confirm-5-1-4 > input ~ label:nth-of-type(3),
+.confirm-5-2-3 > input ~ label:nth-of-type(3),
+.confirm-5-3-2 > input ~ label:nth-of-type(3),
+.confirm-5-4-1 > input ~ label:nth-of-type(3) {
+  left: 50%;
+}
+.confirm-6-1-3 > input ~ label:nth-of-type(3),
+.confirm-6-2-2 > input ~ label:nth-of-type(3),
+.confirm-6-3-1 > input ~ label:nth-of-type(3) {
+  left: 60%;
+}
+.confirm-7-1-2 > input ~ label:nth-of-type(3),
+.confirm-7-2-1 > input ~ label:nth-of-type(3) {
+  left: 70%;
+}
+.confirm-8-1-1 > input ~ label:nth-of-type(3) {
+  left: 80%;
+}
