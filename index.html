@@ -5,594 +5,764 @@
 	<title>Confirm</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="gh-pages/css/introjs.min.css">
+	<link rel="stylesheet" type="text/css" href="gh-pages/css/gh-pages.css">
 	<link rel="stylesheet" type="text/css" href="source/css/confirm.css">
 </head>
-<body>
+<body ng-app="confirmApp">
 	
-	<div class="container col-md-12" style="padding-bottom: 60px;">
-		</br>
-		</br>	
-		<h1 style="text-align: center;font-weight: bold;">Confirm-Button</h1>
-		
-		<div class="col-md-6 col-md-offset-3 confirm">
-			<input id="confirm" type="checkbox">
-			<label class="btn" for="confirm">Do something</label>
-			<label class="glyphicon-ok" for="confirm">Yes</label>
-			<label>Confirm?</label>
-			<label class="glyphicon-remove" for="confirm">No</label>
-		</div>
-		
-		<h3 class="col-md-11 col-md-offset-1" style="padding-top: 40px; padding-bottom: 40px;">Using different proportions</h3>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">10% | 80% | 10%</label>
-					<div class="col-md-6 confirm-1-8-1">
-						<input id="1-8-1" type="checkbox" checked>
-						<label for="1-8-1">Do something</label>
-						<label for="1-8-1">Y</label>
-						<label>Confirm?</label>
-						<label for="1-8-1">N</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">20% | 60% | 20%</label>
-					<div class="col-md-6 confirm-2-6-2">
-						<input id="2-6-2" type="checkbox" checked>
-						<label for="2-6-2">Do something</label>
-						<label for="2-6-2">Yes</label>
-						<label>Confirm?</label>
-						<label for="2-6-2">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">30% | 40% | 30%</label>
-					<div class="col-md-6 confirm-3-4-3">
-						<input id="3-4-3" type="checkbox" checked>
-						<label for="3-4-3">Do something</label>
-						<label for="3-4-3">Yes</label>
-						<label>Confirm?</label>
-						<label for="3-4-3">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">40% | 20% | 40%</label>
-					<div class="col-md-6 confirm-4-2-4">
-						<input id="4-2-4" type="checkbox" checked>
-						<label for="4-2-4">Do something</label>
-						<label for="4-2-4">Yes</label>
-						<label>?</label>
-						<label for="4-2-4">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-2-3-5">
-						<input id="2-3-5" type="checkbox" checked>
-						<label for="2-3-5">Do something</label>
-						<label for="2-3-5">Yes</label>
-						<label>Confirm?</label>
-						<label for="2-3-5">No</label>
-					</div>
-					<label class="col-md-3">20% | 30% | 50%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-4-4-2">
-						<input id="4-4-2" type="checkbox" checked>
-						<label for="4-4-2">Do something</label>
-						<label for="4-4-2">Yes</label>
-						<label>Confirm?</label>
-						<label for="4-4-2">No</label>
-					</div>
-					<label class="col-md-3">40% | 40% | 20%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-4-3-3">
-						<input id="4-3-3" type="checkbox" checked>
-						<label for="4-3-3">Do something</label>
-						<label for="4-3-3">Yes</label>
-						<label>Confirm?</label>
-						<label for="4-3-3">No</label>
-					</div>
-					<label class="col-md-3">40% | 30% | 30%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-8-1-1">
-						<input id="8-1-1" type="checkbox" checked>
-						<label for="8-1-1">Do something</label>
-						<label for="8-1-1">Yes</label>
-						<label>?</label>
-						<label for="8-1-1">N</label>
-					</div>
-					<label class="col-md-3">80% | 10% | 10%</label>
-				</div>
-			</form>
-		</div>
-		
-		<h3 class="col-md-11 col-md-offset-1" style="padding-top: 40px; padding-bottom: 40px;">Confirm mini</h3>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">10% | 90%</label>
-					<div class="col-md-6 confirm-1-9">
-						<input id="1-9" type="checkbox" checked>
-						<label for="1-9">Do something</label>
-						<label for="1-9">Y</label>
-						<label for="1-9">No, why would I?</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">20% | 80%</label>
-					<div class="col-md-6 confirm-2-8">
-						<input id="2-8" type="checkbox" checked>
-						<label for="2-8">Do something</label>
-						<label for="2-8">Yes</label>
-						<label for="2-8">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">30% | 70%</label>
-					<div class="col-md-6 confirm-3-7">
-						<input id="3-7" type="checkbox" checked>
-						<label for="3-7">Do something</label>
-						<label for="3-7">Yes</label>
-						<label for="3-7">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-3" style="text-align: right;">40% | 60%</label>
-					<div class="col-md-6 confirm-4-6">
-						<input id="4-6" type="checkbox" checked>
-						<label for="4-6">Do something</label>
-						<label for="4-6">Yes</label>
-						<label for="4-6">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-9-1">
-						<input id="9-1" type="checkbox" checked>
-						<label for="9-1">Do something</label>
-						<label for="9-1">Yes, of course!</label>
-						<label for="9-1">N</label>
-					</div>
-					<label class="col-md-3">90% | 10%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-8-2">
-						<input id="8-2" type="checkbox" checked>
-						<label for="8-2">Do something</label>
-						<label for="8-2">Yes</label>
-						<label for="8-2">No</label>
-					</div>
-					<label class="col-md-3">80% | 20%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-7-3">
-						<input id="7-3" type="checkbox" checked>
-						<label for="7-3">Do something</label>
-						<label for="7-3">Yes</label>
-						<label for="7-3">No</label>
-					</div>
-					<label class="col-md-3">70% | 30%</label>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<div class="col-md-6 confirm-6-4">
-						<input id="6-4" type="checkbox" checked>
-						<label for="6-4">Do something</label>
-						<label for="6-4">Yes</label>
-						<label for="6-4">N</label>
-					</div>
-					<label class="col-md-3">60% | 40%</label>
-				</div>
-			</form>
-		</div>
-		
-		<h3 class="col-md-11 col-md-offset-1" style="padding-top: 40px; padding-bottom: 40px;">Using the Bootstrap-Theme</h3>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Default</label>
-					<div class="col-md-6 confirm-default">
-						<input id="box1" type="checkbox">
-						<label for="box1">Do something</label>
-						<label for="box1" onclick="">Yes</label>
-						<label>Confirm?</label>
-						<label for="box1">No</label>
-					</div>
-				</div>
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Inverse</label>
-					<div class="col-md-6 confirm-inverse">
-						<input id="box2" type="checkbox">
-						<label for="box2">Do something</label>
-						<label for="box2">Yes</label>
-						<label>Confirm?</label>
-						<label for="box2">No</label>
-					</div>
-				</div>
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Primary</label>
-					<div class="col-md-6 confirm-primary">
-						<input id="box3" type="checkbox">
-						<label for="box3">Do something</label>
-						<label for="box3">Yes</label>
-						<label>Confirm?</label>
-						<label for="box3">No</label>
-					</div>
-				</div>
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Success</label>
-					<div class="col-md-6 confirm-success">
-						<input id="box4" type="checkbox">
-						<label for="box4">Do something</label>
-						<label for="box4">Yes</label>
-						<label>Confirm?</label>
-						<label for="box4">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Info</label>
-					<div class="col-md-6 confirm-info">
-						<input id="box5" type="checkbox">
-						<label for="box5">Do something</label>
-						<label for="box5">Yes</label>
-						<label>Confirm?</label>
-						<label for="box5">No</label>
-					</div>	
-				</div>
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Warning</label>
-					<div class="col-md-6 confirm-warning">
-						<input id="box6" type="checkbox">
-						<label for="box6">Do something</label>
-						<label for="box6">Yes</label>
-						<label>Confirm?</label>
-						<label for="box6">No</label>
-					</div>
-				</div>
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Danger</label>
-					<div class="col-md-6 confirm-danger">
-						<input id="box7" type="checkbox">
-						<label for="box7">Do something</label>
-						<label for="box7">Yes</label>
-						<label>Confirm?</label>
-						<label for="box7">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		
-		<h3 class="col-md-11 col-md-offset-1" style="padding-top: 40px; padding-bottom: 40px;">Using the Google-Calendar-Theme</h3>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Brown</label>
-					<div class="col-md-6 confirm-google-brown">
-						<input id="box11" type="checkbox">
-						<label for="box11">Do something</label>
-						<label for="box11">Yes</label>
-						<label>Confirm?</label>
-						<label for="box11">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightbrown</label>
-					<div class="col-md-6 confirm-google-lightbrown">
-						<input id="box12" type="checkbox">
-						<label for="box12">Do something</label>
-						<label for="box12">Yes</label>
-						<label>Confirm?</label>
-						<label for="box12">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Red</label>
-					<div class="col-md-6 confirm-google-red">
-						<input id="box13" type="checkbox">
-						<label for="box13">Do something</label>
-						<label for="box13">Yes</label>
-						<label>Confirm?</label>
-						<label for="box13">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightred</label>
-					<div class="col-md-6 confirm-google-lightred">
-						<input id="box14" type="checkbox">
-						<label for="box14">Do something</label>
-						<label for="box14">Yes</label>
-						<label>Confirm?</label>
-						<label for="box14">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Orange</label>
-					<div class="col-md-6 confirm-google-orange">
-						<input id="box15" type="checkbox">
-						<label for="box15">Do something</label>
-						<label for="box15">Yes</label>
-						<label>Confirm?</label>
-						<label for="box15">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightorange</label>
-					<div class="col-md-6 confirm-google-lightorange">
-						<input id="box16" type="checkbox">
-						<label for="box16">Do something</label>
-						<label for="box16">Yes</label>
-						<label>Confirm?</label>
-						<label for="box16">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Yellow</label>
-					<div class="col-md-6 confirm-google-yellow">
-						<input id="box17" type="checkbox">
-						<label for="box17">Do something</label>
-						<label for="box17">Yes</label>
-						<label>Confirm?</label>
-						<label for="box17">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightyellow</label>
-					<div class="col-md-6 confirm-google-lightyellow">
-						<input id="box18" type="checkbox">
-						<label for="box18">Do something</label>
-						<label for="box18">Yes</label>
-						<label>Confirm?</label>
-						<label for="box18">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightgreen</label>
-					<div class="col-md-6 confirm-google-lightgreen">
-						<input id="box19" type="checkbox">
-						<label for="box19">Do something</label>
-						<label for="box19">Yes</label>
-						<label>Confirm?</label>
-						<label for="box19">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Green</label>
-					<div class="col-md-6 confirm-google-green">
-						<input id="box20" type="checkbox">
-						<label for="box20">Do something</label>
-						<label for="box20">Yes</label>
-						<label>Confirm?</label>
-						<label for="box20">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Darkgreen</label>
-					<div class="col-md-6 confirm-google-darkgreen">
-						<input id="box21" type="checkbox">
-						<label for="box21">Do something</label>
-						<label for="box21">Yes</label>
-						<label>Confirm?</label>
-						<label for="box21">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Turquois</label>
-					<div class="col-md-6 confirm-google-turquoise">
-						<input id="box22" type="checkbox">
-						<label for="box22">Do something</label>
-						<label for="box22">Yes</label>
-						<label>Confirm?</label>
-						<label for="box22">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="row col-md-6">
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightturquois</label>
-					<div class="col-md-6 confirm-google-lightturquoise">
-						<input id="box23" type="checkbox">
-						<label for="box23">Do something</label>
-						<label for="box23">Yes</label>
-						<label>Confirm?</label>
-						<label for="box23">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightblue</label>
-					<div class="col-md-6 confirm-google-lightblue">
-						<input id="box24" type="checkbox">
-						<label for="box24">Do something</label>
-						<label for="box24">Yes</label>
-						<label>Confirm?</label>
-						<label for="box24">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Blue</label>
-					<div class="col-md-6 confirm-google-blue">
-						<input id="box25" type="checkbox">
-						<label for="box25">Do something</label>
-						<label for="box25">Yes</label>
-						<label>Confirm?</label>
-						<label for="box25">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Darkblue</label>
-					<div class="col-md-6 confirm-google-darkblue">
-						<input id="box26" type="checkbox">
-						<label for="box26">Do something</label>
-						<label for="box26">Yes</label>
-						<label>Confirm?</label>
-						<label for="box26">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Indigo</label>
-					<div class="col-md-6 confirm-google-indigo">
-						<input id="box27" type="checkbox">
-						<label for="box27">Do something</label>
-						<label for="box27">Yes</label>
-						<label>Confirm?</label>
-						<label for="box27">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightpurple</label>
-					<div class="col-md-6 confirm-google-lightpurple">
-						<input id="box28" type="checkbox">
-						<label for="box28">Do something</label>
-						<label for="box28">Yes</label>
-						<label>Confirm?</label>
-						<label for="box28">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Purple</label>
-					<div class="col-md-6 confirm-google-purple">
-						<input id="box29" type="checkbox">
-						<label for="box29">Do something</label>
-						<label for="box29">Yes</label>
-						<label>Confirm?</label>
-						<label for="box29">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Redviolet</label>
-					<div class="col-md-6 confirm-google-redviolet">
-						<input id="box30" type="checkbox">
-						<label for="box30">Do something</label>
-						<label for="box30">Yes</label>
-						<label>Confirm?</label>
-						<label for="box30">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Pink</label>
-					<div class="col-md-6 confirm-google-pink">
-						<input id="box31" type="checkbox">
-						<label for="box31">Do something</label>
-						<label for="box31">Yes</label>
-						<label>Confirm?</label>
-						<label for="box31">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Browngrey</label>
-					<div class="col-md-6 confirm-google-browngrey">
-						<input id="box32" type="checkbox">
-						<label for="box32">Do something</label>
-						<label for="box32">Yes</label>
-						<label>Confirm?</label>
-						<label for="box32">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Lightgrey</label>
-					<div class="col-md-6 confirm-google-lightgrey">
-						<input id="box33" type="checkbox">
-						<label for="box33">Do something</label>
-						<label for="box33">Yes</label>
-						<label>Confirm?</label>
-						<label for="box33">No</label>
-					</div>
-				</div>
-			</form>
-			<form class="form-horizontal col-md-12" role="form">
-				<div class="form-group col-md-12">
-					<label class="col-md-3 col-md-offset-1">Grey</label>
-					<div class="col-md-6 confirm-google-grey">
-						<input id="box34" type="checkbox">
-						<label for="box34">Do something</label>
-						<label for="box34">Yes</label>
-						<label>Confirm?</label>
-						<label for="box34">No</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		
+	<div ui-view="navigation" autoscroll="true">
 		
 	</div>
+	
+	<div class="container col-md-12" style="padding-bottom: 60px;">
+		<div ui-view autoscroll="true">
+			
+		</div>
+	</div>
+	
+	<footer>
+		<ul>
+			<li class="brand-bmm"><a href="http://philiptober.wordpress.com/">Broadening My Mind</a></li>
+			<li class="brand-bmm"><a href="http://www.woiwode.info/blog/">Empathic Business Design</a></li>
+		</ul>
+		<ul class="footer-nav">		
+			<li><a ui-sref="history">v1.0.0</a></li>
+			<li><a ui-sref="about">About</a></li>
+			<li><a href="https://github.com/philiptober/confirm/blob/gh-pages/LICENSE">License</a></li>
+			<li><a href="https://github.com/philiptober/confirm/issues">Report Issues</a></li>
+			<li><a href="https://github.com/philiptober/confirm">Repository</a></li>
+		</ul>
+		<p>
+			The confirm project is licensed under the MIT license. Copyright © 2014 Philip Tober and Gregor Woiwode.
+		</p>
+	</footer>
+	
+	<script type="text/ng-template" id="_navigation.html">
+		<nav class="navbar navbar-gh-pages navbar-fixed-top" role="navigation">
+			<div class="container">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#confirm-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ui-sref="home">confirm</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="confirm-nav">
+					<ul class="nav navbar-nav">
+						<li ng-class="{active: currentState=='home'}"><a ui-sref="home">Home</a></li>
+						<li ng-class="{active: currentState=='getIt'}"><a ui-sref="getIt">Get it</a></li>
+						<li ng-class="{active: currentState=='syntax'}"><a ui-sref="syntax">Syntax</a></li>
+						<li ng-class="{active: currentState=='history'}"><a ui-sref="history">History</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</script>
+	
+	<script type="text/ng-template" id="_home.html">
+		<div ng-controller="homeController" ng-intro-options="IntroOptions" 
+				  ng-intro-method="CallMe" ng-intro-onexit="ExitEvent">
+			<div class="gh-pages-intro">
+				<p>This little button enables the user to confirm his choice.</p>
+				<p>It's highly customizable and only uses HTML and CSS.</p>
+				<p>
+					Use the guide 
+					<button ng-click="CallMe()"></button>
+				</p>
+				<p>or</p>
+				<p>experiment yourself</p>
+			</div>
+			
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-6 col-md-offset-3 confirm-google-orange" data-step="1&2&3">
+					<input id="confirm" type="checkbox">
+					<label class="btn" for="confirm">Do something</label>
+					<label class="glyphicon-ok" for="confirm" data-step="4">Yes</label>
+					<label>Confirm?</label>
+					<label class="glyphicon-remove" for="confirm">No</label>
+				</div>
+			</div>
+			
+			<div class="gh-pages-compatibility">
+				<h1>Browser compatibility:</h1>
+				<p>
+					<span class="icomoon-chrome"></span> 
+					<span class="icomoon-firefox"></span> 
+					<span class="icomoon-IE"></span> 
+					<span class="icomoon-opera"></span> 
+					<span class="icomoon-safari"></span>
+				</p>
+				<p>tested on Windows 8.1 x64</p>
+			</div>
+		</div>
+		
+		<div id="disqus_thread" class="col-md-8 col-md-offset-2"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'github-confirm'; // required: replace example with your forum shortname
+ 
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+		<!-- Put this just before the closing body tag of your web page -->
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'erjjones'; // required: replace example with your forum shortname
+ 
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		</script>
+	</script>
+	
+	<script type="text/ng-template" id="_getIt.html">
+		<div class="gh-pages-get-it container col-md-8 col-md-offset-2">
+			<h1>Get it</h1>
+			<div class="downloads">
+				<a class="glyphicon-download-alt" href="https://github.com/philiptober/confirm/archive/gh-pages.zip"></a>
+				<div>or</div>
+				<a class="icomoon-github" href="https://github.com/philiptober/confirm"></a>
+			</div>
+			<div class="prerequisites">
+				<h2>Prerequisites</h2>
+				<ul>
+					<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+				</ul>
+			</div>
+		<div>
+	</script>
+	
+	<script type="text/ng-template" id="_syntax.html">
+		<div class="syntax-doc container col-md-8 col-md-offset-2">
+			<div>
+				<h1>The whole snippet</h1>
+				<p>
+					This is the basic snippet without any color or ratio specified. You can also add icons like the sample without using
+					a prior class <em>glyphicon</em> of the bootstrap framework. 
+				</p>
+				<div class="confirm">
+					<input id="confirm" type="checkbox">
+					<label for="confirm">Do something</label>
+					<label class="glyphicon-ok" for="confirm">Yes</label>
+					<label>Confirm?</label>
+					<label class="glyphicon-remove" for="confirm">No</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"glyphicon-ok"</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Yes<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"glyphicon-remove"</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>No<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+				</div>
+			</div>
+			
+			<div>
+				<h1>Using different proportions</h1>
+				<p>
+					You can change the width of the confirm-button, the abort-button and the dialogue then appending three numbers split by 
+					minus characters at the class <em>confirm</em> of the wrapping <em>div</em>-element. The mentioned three numbers have to add up to
+					the number ten.
+				</p>
+				<div class="confirm-1-8-1">
+					<input id="1-8-1" type="checkbox" checked>
+					<label for="1-8-1">Do something</label>
+					<label for="1-8-1">Y</label>
+					<label>10% | 80% | 10%</label>
+					<label for="1-8-1">N</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-1-8-1"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Y<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>N<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+				</div>
+			</div>
+			
+			<div>
+				<h1>Confirm mini</h1>
+				<p>
+					Appending only two numbers on the confirm-class, you are able to hide the dialogue. In addition you don't have to write the 
+					HTML for the dialogue. The mentioned numbers have to add up to the number ten.
+				</p>
+				<div class="confirm-5-5">
+					<input id="5-5" type="checkbox" checked>
+					<label for="5-5">Do something</label>
+					<label for="5-5">Y</label>
+					<label for="5-5">N</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-5-5"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Y<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>N<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+
+OR
+
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-5-5"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Y<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>N<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+				</div>
+			</div>
+			
+			<div>
+				<h1>Using the Bootstrap-Theme</h1>
+				<p>
+					Then adding <em>-default</em>, <em>-inverse</em>, <em>-primary</em>, <em>-success</em>, <em>-info</em>, <em>-warning</em>
+					or <em>-danger</em> on the end of the <em>confirm</em>-class, you can dye the button in bootstrap colors. Defined ratios 
+					are placed in between <em>confirm</em> and the color like <em>confirm-2-6-2-primary</em>.
+				</p>
+				<div class="confirm-primary">
+					<input id="boxPrimary" type="checkbox">
+					<label for="boxPrimary">Do something</label>
+					<label for="boxPrimary">Yes</label>
+					<label>Confirm?</label>
+					<label for="boxPrimary">No</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-primary"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Yes<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>No<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+					<br>
+					<br>
+					<div class="row col-xs-12 col-sm-6">
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Default</label>
+								<div class="col-md-6 confirm-default">
+									<input id="box1" type="checkbox">
+									<label for="box1">Do something</label>
+									<label for="box1">Y</label>
+									<label>Confirm?</label>
+									<label for="box1">N</label>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Inverse</label>
+								<div class="col-md-6 confirm-inverse">
+									<input id="box2" type="checkbox">
+									<label for="box2">Do something</label>
+									<label for="box2">Y</label>
+									<label>Confirm?</label>
+									<label for="box2">N</label>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Primary</label>
+								<div class="col-md-6 confirm-primary">
+									<input id="box3" type="checkbox">
+									<label for="box3">Do something</label>
+									<label for="box3">Y</label>
+									<label>Confirm?</label>
+									<label for="box3">N</label>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Success</label>
+								<div class="col-md-6 confirm-success">
+									<input id="box4" type="checkbox">
+									<label for="box4">Do something</label>
+									<label for="box4">Y</label>
+									<label>Confirm?</label>
+									<label for="box4">N</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row col-xs-12 col-sm-6">
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Info</label>
+								<div class="col-md-6 confirm-info">
+									<input id="box5" type="checkbox">
+									<label for="box5">Do something</label>
+									<label for="box5">Y</label>
+									<label>Confirm?</label>
+									<label for="box5">N</label>
+								</div>	
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Warning</label>
+								<div class="col-md-6 confirm-warning">
+									<input id="box6" type="checkbox">
+									<label for="box6">Do something</label>
+									<label for="box6">Y</label>
+									<label>Confirm?</label>
+									<label for="box6">N</label>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Danger</label>
+								<div class="col-md-6 confirm-danger">
+									<input id="box7" type="checkbox">
+									<label for="box7">Do something</label>
+									<label for="box7">Y</label>
+									<label>Confirm?</label>
+									<label for="box7">N</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<h1>Using the Google-Calendar-Theme</h1>
+				<p>
+					Then adding <em>-google-brown</em>, <em>-google-lightbrown</em>, <em>-google-red</em> ... <em>-google-lightgrey</em> 
+					or <em>-google-grey</em> on the end of the <em>confirm</em>-class, you can dye the button in google calendar colors. 
+					Defined ratios are placed in between <em>confirm</em> and the color like <em>confirm-2-6-2-google-orange</em>.
+				</p>
+				<div class="confirm-google-orange">
+					<input id="boxOrange" type="checkbox">
+							<label for="boxOrange">Do something</label>
+							<label for="boxOrange">Yes</label>
+							<label>Confirm?</label>
+							<label for="boxOrange">No</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-google-orange"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Yes<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>No<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+					<br>
+					<br>
+					<div class="row col-xs-12 col-sm-6">
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Brown</label>
+								<div class="col-md-6 confirm-google-brown">
+									<input id="box11" type="checkbox">
+									<label for="box11">Do something</label>
+									<label for="box11">Y</label>
+									<label>Confirm?</label>
+									<label for="box11">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Lightbrown</label>
+								<div class="col-md-6 confirm-google-lightbrown">
+									<input id="box12" type="checkbox">
+									<label for="box12">Do something</label>
+									<label for="box12">Y</label>
+									<label>Confirm?</label>
+									<label for="box12">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Red</label>
+								<div class="col-md-6 confirm-google-red">
+									<input id="box13" type="checkbox">
+									<label for="box13">Do something</label>
+									<label for="box13">Y</label>
+									<label>Confirm?</label>
+									<label for="box13">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Lightred</label>
+								<div class="col-md-6 confirm-google-lightred">
+									<input id="box14" type="checkbox">
+									<label for="box14">Do something</label>
+									<label for="box14">Y</label>
+									<label>Confirm?</label>
+									<label for="box14">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Orange</label>
+								<div class="col-md-6 confirm-google-orange">
+									<input id="box15" type="checkbox">
+									<label for="box15">Do something</label>
+									<label for="box15">Y</label>
+									<label>Confirm?</label>
+									<label for="box15">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Lightorange</label>
+								<div class="col-md-6 confirm-google-lightorange">
+									<input id="box16" type="checkbox">
+									<label for="box16">Do something</label>
+									<label for="box16">Y</label>
+									<label>Confirm?</label>
+									<label for="box16">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Yellow</label>
+								<div class="col-md-6 confirm-google-yellow">
+									<input id="box17" type="checkbox">
+									<label for="box17">Do something</label>
+									<label for="box17">Y</label>
+									<label>Confirm?</label>
+									<label for="box17">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Lightyellow</label>
+								<div class="col-md-6 confirm-google-lightyellow">
+									<input id="box18" type="checkbox">
+									<label for="box18">Do something</label>
+									<label for="box18">Y</label>
+									<label>Confirm?</label>
+									<label for="box18">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Lightgreen</label>
+								<div class="col-md-6 confirm-google-lightgreen">
+									<input id="box19" type="checkbox">
+									<label for="box19">Do something</label>
+									<label for="box19">Y</label>
+									<label>Confirm?</label>
+									<label for="box19">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Green</label>
+								<div class="col-md-6 confirm-google-green">
+									<input id="box20" type="checkbox">
+									<label for="box20">Do something</label>
+									<label for="box20">Y</label>
+									<label>Confirm?</label>
+									<label for="box20">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Darkgreen</label>
+								<div class="col-md-6 confirm-google-darkgreen">
+									<input id="box21" type="checkbox">
+									<label for="box21">Do something</label>
+									<label for="box21">Y</label>
+									<label>Confirm?</label>
+									<label for="box21">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5">Turquois</label>
+								<div class="col-md-6 confirm-google-turquoise">
+									<input id="box22" type="checkbox">
+									<label for="box22">Do something</label>
+									<label for="box22">Y</label>
+									<label>Confirm?</label>
+									<label for="box22">N</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row col-xs-12 col-sm-6">
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Lightturquois</label>
+								<div class="col-md-6 confirm-google-lightturquoise">
+									<input id="box23" type="checkbox">
+									<label for="box23">Do something</label>
+									<label for="box23">Y</label>
+									<label>Confirm?</label>
+									<label for="box23">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Lightblue</label>
+								<div class="col-md-6 confirm-google-lightblue">
+									<input id="box24" type="checkbox">
+									<label for="box24">Do something</label>
+									<label for="box24">Y</label>
+									<label>Confirm?</label>
+									<label for="box24">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Blue</label>
+								<div class="col-md-6 confirm-google-blue">
+									<input id="box25" type="checkbox">
+									<label for="box25">Do something</label>
+									<label for="box25">Y</label>
+									<label>Confirm?</label>
+									<label for="box25">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Darkblue</label>
+								<div class="col-md-6 confirm-google-darkblue">
+									<input id="box26" type="checkbox">
+									<label for="box26">Do something</label>
+									<label for="box26">Y</label>
+									<label>Confirm?</label>
+									<label for="box26">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Indigo</label>
+								<div class="col-md-6 confirm-google-indigo">
+									<input id="box27" type="checkbox">
+									<label for="box27">Do something</label>
+									<label for="box27">Y</label>
+									<label>Confirm?</label>
+									<label for="box27">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Lightpurple</label>
+								<div class="col-md-6 confirm-google-lightpurple">
+									<input id="box28" type="checkbox">
+									<label for="box28">Do something</label>
+									<label for="box28">Y</label>
+									<label>Confirm?</label>
+									<label for="box28">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Purple</label>
+								<div class="col-md-6 confirm-google-purple">
+									<input id="box29" type="checkbox">
+									<label for="box29">Do something</label>
+									<label for="box29">Y</label>
+									<label>Confirm?</label>
+									<label for="box29">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Redviolet</label>
+								<div class="col-md-6 confirm-google-redviolet">
+									<input id="box30" type="checkbox">
+									<label for="box30">Do something</label>
+									<label for="box30">Y</label>
+									<label>Confirm?</label>
+									<label for="box30">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Pink</label>
+								<div class="col-md-6 confirm-google-pink">
+									<input id="box31" type="checkbox">
+									<label for="box31">Do something</label>
+									<label for="box31">Y</label>
+									<label>Confirm?</label>
+									<label for="box31">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Browngrey</label>
+								<div class="col-md-6 confirm-google-browngrey">
+									<input id="box32" type="checkbox">
+									<label for="box32">Do something</label>
+									<label for="box32">Y</label>
+									<label>Confirm?</label>
+									<label for="box32">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Lightgrey</label>
+								<div class="col-md-6 confirm-google-lightgrey">
+									<input id="box33" type="checkbox">
+									<label for="box33">Do something</label>
+									<label for="box33">Y</label>
+									<label>Confirm?</label>
+									<label for="box33">N</label>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal col-md-12" role="form">
+							<div class="form-group col-md-12">
+								<label class="col-md-5 col-md-offset-1">Grey</label>
+								<div class="col-md-6 confirm-google-grey">
+									<input id="box34" type="checkbox">
+									<label for="box34">Do something</label>
+									<label for="box34">Y</label>
+									<label>Confirm?</label>
+									<label for="box34">N</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<h1>Using the different colors</h1>
+				<p>
+					You can also use different colors on one snippet adding <em>btn-</em>color or <em>label-</em>color on a label like 
+					<em>btn-inverse</em>.
+				</p>
+				<div class="confirm">
+					<input id="boxMixed" type="checkbox" checked>
+					<label class="btn-inverse" for="boxMixed">Do something</label>
+					<label class="btn-google-turquoise" for="boxMixed">Yes</label>
+					<label class="label-google-indigo">Confirm?</label>
+					<label class="btn-info" for="boxMixed">No</label>
+				</div>
+				<div class="highlight">
+					<pre>
+						<code class="html">
+<span class="nt">&#60;div</span> <span class="na">class=</span><span class="s">"confirm-primary"</span><span class="nt">&#62;</span>
+  <span class="nt">&#60;input</span> <span class="na">id=</span><span class="s">"confirm"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"btn-inverse"</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Do something<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"btn-google-turquoise"</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>Yes<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"label-google-indigo"</span><span class="nt">&#62;</span>Confirm?<span class="nt">&#60;/label&#62;</span>
+  <span class="nt">&#60;label</span> <span class="na">class=</span><span class="s">"btn-info"</span> <span class="na">for=</span><span class="s">"confirm"</span><span class="nt">&#62;</span>No<span class="nt">&#60;/label&#62;</span>
+<span class="nt">&#60;/ul&#62;</span>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/ng-template" id="_history.html">
+		<div class="gh-pages-history col-md-8 col-md-offset-2">
+			<h1>History</h1>
+			<ul class="timeline">
+			<li>
+					<div class="timeline-badge warning"><i class="glyphicon glyphicon-edit"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Upcoming features</h4>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li>there are no new planned features yet</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Features v1.0.0</h4>
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> published 11.10.2014</small></p>
+						</div>
+						<div class="timeline-body"><p>
+							<ul>
+								<li>button asking you to confirm your decision</li>
+								<li>changeable ratio of the confirm buttons</li>
+								<li>mini version (containing only two buttons to confirm without additional dialogue)</li>
+								<li>bootstrap theme</li>
+								<li>google calendar theme</li>
+								<li>source written in less</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</script>
+	
+	<script type="text/ng-template" id="_about.html">
+		<div class="gh-pages-about-contact col-md-8 col-md-offset-2">
+			<div class="about">
+				<h2>ABOUT</h2>
+				<p>
+					There isn't much to talk about here. A tester for one of my companies internal websites asked 
+					for a button, which confirms the upcoming action. Well, it wasn't really essential to the website.
+					So I started implementing it off work.
+				</p>
+			</div>
+		</div>
+	</script>
+	
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/intro.js/0.9.0/intro.min.js"></script>
+  <script src="gh-pages/js/angular-intro.min.js"></script>
+	<script src="gh-pages/js/app.js"></script>
 </body>
 </html>
